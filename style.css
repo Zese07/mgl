@@ -1,3 +1,9 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -6,13 +12,14 @@ body {
     color: #333;
     overflow-x: hidden;
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 .header {
     display: block;
     margin: 0 auto;
     width: 15%;
-  }
+}
   
 
 section {
@@ -172,4 +179,24 @@ h2 {
 
 .right-arrow {
     right: 50px;
+}
+
+@media (max-width: 600px) {
+    .header {
+        width: 50%;
+    }
+    h1 {
+        font-size: 0.9em;
+        margin: 20px 0;
+        color: gray;
+    } 
+    .container {
+        width: 100%;
+    }
+    .item {
+        width: 125px;
+    }
+    .arrow {
+        display: none;
+    }
 }
