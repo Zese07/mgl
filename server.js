@@ -1,5 +1,6 @@
 const express = require('express');
 const app = express();
+const path = require('path'); 
 
 const animeRoutes = require('./routes/mal/anime');
 const mangaRoutes = require('./routes/mal/manga');
@@ -16,6 +17,10 @@ app.use('/mal', animeRoutes);
 app.use('/mal', mangaRoutes);
 app.use('/mal', lightnovelRoutes);
 app.use('/mdl', dramaRoutes);
+
+app.get('/', (req, res) => {
+    res.sendFile(path.join(__dirname, 'index.html'));
+});
 
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
