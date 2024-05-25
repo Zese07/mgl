@@ -3,9 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="./img/icon.ico" type="image/x-icon">
+    <link rel="icon" href="img/icon.ico" type="image/x-icon">
     <title>My Media Gallery</title>
-    <link rel="stylesheet" href="style.css">
 <style>
     body {
         margin: 0;
@@ -185,7 +184,7 @@
 </style>
 </head>
 <body>
-<img src="./img/header.gif" class="header">
+<img src="img/header.gif" class="header">
 <h1>Latest update of every media I'm consuming.</h1>
 
 <section id="animeSection" class="left-direction">
@@ -226,7 +225,7 @@
 <script>
     async function fetchAnime() {
         try {
-            const response = await fetch('http://localhost:3000/mal/anime');
+            const response = await fetch('https://mymediagallery.onrender.com/mal/anime');
             if (response.ok) {
                 const data = await response.json();
                 return data;
@@ -242,7 +241,7 @@
     
     async function fetchManga() {
         try {
-            const response = await fetch('http://localhost:3000/mal/manga');
+            const response = await fetch('https://mymediagallery.onrender.com/mal/manga');
             if (response.ok) {
                 const data = await response.json();
                 return data;
@@ -258,7 +257,7 @@
     
     async function fetchLightNovel() {
         try {
-            const response = await fetch('http://localhost:3000/mal/lightnovel');
+            const response = await fetch('https://mymediagallery.onrender.com/mal/lightnovel');
             if (response.ok) {
                 const data = await response.json();
                 return data;
@@ -274,7 +273,7 @@
     
     async function fetchDramas() {
         try {
-            const response = await fetch('http://localhost:3000/mdl/drama');
+            const response = await fetch('https://mymediagallery.onrender.com/mdl/drama');
             if (response.ok) {
                 const data = await response.json();
                 return data;
