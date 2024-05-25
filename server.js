@@ -18,6 +18,8 @@ app.use('/mal', mangaRoutes);
 app.use('/mal', lightnovelRoutes);
 app.use('/mdl', dramaRoutes);
 
+app.use(express.static(path.join(__dirname)));
+
 app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, 'index.html'));
 });
