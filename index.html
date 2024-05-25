@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./icon.ico" type="image/x-icon">
+    <title>My Media Gallery</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+<img src="./header.gif" class="header">
+<h1>Latest update of every media I'm consuming.</h1>
+
+<section id="animeSection" class="left-direction">
+    <h2>Anime</h2>
+    <div class="container">
+        <div class="arrow left-arrow" onclick="scrollGallery('animeGallery', 'left')">&lt;</div>
+        <div class="gallery" id="animeGallery"></div>
+        <div class="arrow right-arrow" onclick="scrollGallery('animeGallery', 'right')">&gt;</div>
+    </div>
+</section>
+
+<section id="mangaSection" class="right-direction">
+    <h2>Manga</h2>
+    <div class="container">
+        <div class="arrow left-arrow" onclick="scrollGallery('mangaGallery', 'left')">&lt;</div>
+        <div class="gallery" id="mangaGallery"></div>
+        <div class="arrow right-arrow" onclick="scrollGallery('mangaGallery', 'right')">&gt;</div>
+    </div>
+</section>
+
+<section id="lightnovelSection" class="left-direction">
+    <h2>Light Novel</h2>
+    <div class="container">
+        <div class="arrow left-arrow" onclick="scrollGallery('lightnovelGallery', 'left')">&lt;</div>
+        <div class="gallery" id="lightnovelGallery"></div>
+        <div class="arrow right-arrow" onclick="scrollGallery('lightnovelGallery', 'right')">&gt;</div>
+    </div>
+</section>
+
+<section id="dramaSection" class="right-direction">
+    <h2>Drama</h2>
+    <div class="container">
+        <div class="arrow left-arrow" onclick="scrollGallery('dramaGallery', 'left')">&lt;</div>
+        <div class="gallery" id="dramaGallery"></div>
+        <div class="arrow right-arrow" onclick="scrollGallery('dramaGallery', 'right')">&gt;</div>
+    </div>
+</section>
+</body>
+</html>
