@@ -1,6 +1,6 @@
 async function fetchAnime() {
     try {
-        const response = await fetch('http://localhost:3000/mal/anime');
+        const response = await fetch('https://mymediagallery.onrender.com/mal/anime');
         if (response.ok) {
             const data = await response.json();
             return data;
@@ -16,7 +16,7 @@ async function fetchAnime() {
 
 async function fetchManga() {
     try {
-        const response = await fetch('http://localhost:3000/mal/manga');
+        const response = await fetch('https://mymediagallery.onrender.com/mal/manga');
         if (response.ok) {
             const data = await response.json();
             return data;
@@ -32,7 +32,7 @@ async function fetchManga() {
 
 async function fetchLightNovel() {
     try {
-        const response = await fetch('http://localhost:3000/mal/lightnovel');
+        const response = await fetch('https://mymediagallery.onrender.com/mal/lightnovel');
         if (response.ok) {
             const data = await response.json();
             return data;
@@ -48,7 +48,7 @@ async function fetchLightNovel() {
 
 async function fetchDramas() {
     try {
-        const response = await fetch('http://localhost:3000/mdl/drama');
+        const response = await fetch('https://mymediagallery.onrender.com/mdl/drama');
         if (response.ok) {
             const data = await response.json();
             return data;
